@@ -101,6 +101,7 @@ img .gallery {
     margin-right: auto;
 }
 
+
 /* Form - source // w3schools.com*/
 
 input[type=text], input[type=email], select, textarea {
@@ -142,6 +143,11 @@ a:hover {
     color: #FF6524;
 }
 
+.note {
+    background-color: rgb(255, 255, 185);
+    font-size: small;
+    padding: 15px;
+}
 /* Footer */
 
 footer {
