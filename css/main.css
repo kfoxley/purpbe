@@ -1,0 +1,187 @@
+/* This is from a previous project that I have modified. 
+The form is from w3schools - with more time I would have added my own
+styling.
+
+If I had more time, I wanted to use the 
+Pexels Api to display images in the Photo 
+Examples area that could then be scrolled through.
+
+I also would have added better comments in HTML and CSS.
+
+This process has taught me that I am a perfectionist //
+I have almost completed 5 sites and did not like the look
+of them so kept starting from scratch. Note to self, must 
+change this 😊!!!
+
+*/
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+nav {
+    background-color: #f7f7f7;
+    border-right: 2px solid #666;
+    border-left: 2px solid #666;
+    min-width: 300px;
+    height: 100vh;
+}
+
+nav a {
+    border-top: 1px solid #777;
+    color: #000;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ff8957;
+    color: white;
+}
+
+#navbar a:active {
+    background-color: #FF6524;
+}
+
+main {
+    background-color: #fff;
+    flex: 1;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+section {
+    padding: 30px;
+    line-height: 1.5;
+}
+
+header {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+nav header {
+    padding: 15px;
+}
+
+.li-decoration {
+    list-style: none;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+img .gallery {
+    display: inline-block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form - source // w3schools.com*/
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: #ff8957;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FF6524;
+}
+
+  /* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+a {
+    color: #ff8957;
+}
+
+a:hover {
+    color: #FF6524;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+
+#heart {
+    color: red;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+color: #ff8957;
+}
+
+@media (max-width: 600px) {
+    body {
+    flex-direction: column;
+    }
+
+nav {
+    border-right: none;
+    background-color: #f7f7f7;
+    border-bottom: 2px solid #777;
+    height: 300px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+main {
+    height: auto;
+    width: 100%;
+    }
+}
